@@ -17,9 +17,9 @@
 Office： 
 
          MS Word 2007 (最高支持版本v1.0.8.3)
-         MS Word 2010-2019
+         MS Word 2010/2013/2016/2019
          MS Word 365
-         WPS Office 2013-2019专业版
+         WPS Office 2013/2016/2019专业版
          WPS Office 个人版(自v1.8.2.0起支持)
 
 运行库需求: NetFrame4.0 和 vsto
