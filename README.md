@@ -1,4 +1,4 @@
-# 小恐龙公文排版助手 for Word/WPS
+## 小恐龙公文排版助手 for Word/WPS
 
 ![小恐龙公文排版助手](img/xklbanner.jpg "公文助手")
 
