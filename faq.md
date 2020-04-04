@@ -89,3 +89,9 @@ v1.0.8.3之后的版本不再支持 Word2007。
 
 **解决方案：** 系统未安装默认字体，关于-高级设置-指定公文字体。
 
+## 意见反馈
+
+[通过网页反馈](https://support.qq.com/products/57503)
+
+更多帮助请入QQ群(1)[661211620](http://shang.qq.com/wpa/qunwpa?idkey=5f81cf0d069901cafc1027691fa8c461dfc996362c930aea0eb2e29589743e1a)  QQ群(2) [956898287](http://shang.qq.com/wpa/qunwpa?idkey=499ea997e2978b0206ad52dbccd28cd2f9efab69c80417d9b0881bea843e82f8)
+
