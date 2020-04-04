@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# 小恐龙公文排版助手 for Word/WPS
 
-You can use the [editor on GitHub](https://github.com/xkonglong/xkonglong.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+根据《党政机关公文格式国家标准》(GB/T 9704—2012)的格式要求，快速设置页面版式、快速设置常用文字格式、插入常用符号、版头、版记、公文页码、红线等。
+支持对文字的快速排版，中文首行缩进2字符、删除空白，断句重排等。
+支持对文档盖章、可以在文档同目录下生成 PDF/ doc /图片 格式的副本。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+**本插件完全免费，承诺不含任何恶意代码。**
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+操作系统： win7/win8/win10
+Office： 
+         MS Word 2007 (最高支持版本v1.0.8.3)
+         MS Word 2010-2019
+         MS Word 365
+         WPS Office 2013-2019专业版
+         WPS Office 个人版(自v1.8.2.0起支持)
 
-1. Numbered
-2. List
+运行库需求: NetFrame4.0 和 vsto
 
-**Bold** and _Italic_ and `Code` text
+1.0.8.3 有离线安装版已内置运行库组件,无需单独下载.适合内网用户.
+之后版本均为智能安装版会自动联网微软官网下载,内网用户请单独下载附加组件.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xkonglong/xkonglong.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
