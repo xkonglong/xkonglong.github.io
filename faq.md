@@ -47,15 +47,18 @@ v1.0.8.3之后的版本不再支持 Word2007。
 查看 Word-选项-自定义功能区-“公文”菜单是否勾选.
 
 ![COM加载项](img/com.jpg) 
+
 查看 Word COM 加载项是否禁用公文排版插件.
 
 查看 Word 设置–信任中心设置,是否勾选了”禁用所有应用程序加载项”
+
 查看注册表是否存在如下项目:
+
 (32位Office)
-HKEY_CURRENT_USER\Software\Microsoft\Office\Word\Addins\
+> HKEY_CURRENT_USER\Software\Microsoft\Office\Word\Addins\
 
 (64位Office)
 
-HKEY_CURRENT_USER\Software\Wow6432Node\Microsoft\Office\Word\Addins
+> HKEY_CURRENT_USER\Software\Wow6432Node\Microsoft\Office\Word\Addins
 
 ## 使用出错
