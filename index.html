@@ -1,0 +1,63 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>小恐龙公文排版助手 for Word/WPS</title>
+    <link
+      rel="stylesheet"
+      href="./docute.css"
+    />
+  </head>
+
+  <body>
+    <div id="docute"></div>
+    <script src="./docute.js"></script>
+    <script>
+      new Docute({
+        target: '#docute',
+        layout: 'narrow',
+        nav: [
+          {
+            title: '主页',
+            link: '/'
+          }
+        ],
+        sidebar: [
+          {
+            title: '入门指引',
+            link:'/'
+          },
+          {
+            title: '功能介绍',
+            link:'/feature'
+          
+          },
+          {
+            title: '常见问题',
+            link:'/faq'
+          },
+          {
+            title: '更新日志',
+            link:'/update'
+          
+          },
+        
+          // An external link
+          {
+            title: '小恐龙工作室',
+            link: 'http://xkonglong.com'
+          }
+        ]
+      })
+    
+    </script>
+
+  </body>
+  
+  
+  
+</html>
