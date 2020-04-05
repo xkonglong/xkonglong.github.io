@@ -44,7 +44,7 @@ v1.0.8.3之后的版本不再支持 Word2007。
 ### Word不是精简版,安装后无法显示公文插件
 
 **解决方案：**
-请先确保附加组件已正确安装。
+请先确保**附加组件已正确安装**。
 
 查看 Word-选项-自定义功能区-“公文”菜单是否勾选.
 
@@ -91,7 +91,9 @@ v1.0.8.3之后的版本不再支持 Word2007。
 
 ## 意见反馈
 
-[通过网页反馈](https://support.qq.com/products/57503)
+公开渠道: [通过网页反馈](https://support.qq.com/products/57503)
+
+私密渠道: [![电子邮件](http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png)](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bBQHAwILAAMCCywdHUIPAwE) 
 
 更多帮助请入QQ群(1)[661211620](http://shang.qq.com/wpa/qunwpa?idkey=5f81cf0d069901cafc1027691fa8c461dfc996362c930aea0eb2e29589743e1a)  QQ群(2) [956898287](http://shang.qq.com/wpa/qunwpa?idkey=499ea997e2978b0206ad52dbccd28cd2f9efab69c80417d9b0881bea843e82f8)
 
