@@ -54,5 +54,7 @@ Office：
 
 ## 捐赠支持
 
+![赞赏码](https://txc.gtimg.com/data/57503/2019/0419/8e0e3d1c3d167c105bebae81b74f3fde.jpg)
+
 如果您愿意支持作者,可以通过微信扫描二维码打赏。
-![赞赏码](https://txc.gtimg.com/data/57503/2019/0419/8e0e3d1c3d167c105bebae81b74f3fde_thumb.jpg)
+
