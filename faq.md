@@ -97,3 +97,4 @@ v1.0.8.3之后的版本不再支持 Word2007。
 
 更多帮助请入QQ群(1)[661211620](http://shang.qq.com/wpa/qunwpa?idkey=5f81cf0d069901cafc1027691fa8c461dfc996362c930aea0eb2e29589743e1a)  QQ群(2) [956898287](http://shang.qq.com/wpa/qunwpa?idkey=499ea997e2978b0206ad52dbccd28cd2f9efab69c80417d9b0881bea843e82f8)
 
+入群口令: xkonglong
