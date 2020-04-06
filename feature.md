@@ -73,7 +73,11 @@
 
 ## 应用场景
 
+公文排版助手不仅可以用于政府机关常见的15种公文, 也可以广泛用于各类规范文本的排版。
+
+以下是一些常见应用场景，均为实际用户自行分享的文章。
+
 [广州互联网法院](https://mp.weixin.qq.com/s?src=11&timestamp=1586149473&ver=2261&signature=R7JQv5HXZy-4WiTkTNfwpSnIDlmn35Z82BsC3DBWzlE3ZSRjss6f-qEdnK-H-nU-ACHUaYPl5edEz4QRTO2ROd7NqX8JkpyYmMeWw6WpFoWfpus*Bgl0zgYdgbGuPLCF&new=1)
-![]()
-![]()
-![]()
+[]()
+[]()
+[]()
