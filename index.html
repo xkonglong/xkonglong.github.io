@@ -19,13 +19,18 @@
     <script>
       new Docute({
         target: '#docute',
+        detectSystemDarkTheme:true,
         darkThemeToggler:true,
         layout: 'narrow',
-        footer: `Power by <a href="http://xkonglong.com">小恐龙工作室</a> 2020 年`
+        footer: `Power by <a href="http://xkonglong.com">小恐龙工作室</a> 2020 年`,
         nav: [
           {
-            title: '主页',
+            title: '首页',
             link: '/'
+          },
+          {
+            title: '官网',
+            link: 'http://xkonglong.com'
           }
         ],
         sidebar: [
