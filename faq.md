@@ -63,6 +63,11 @@ v1.0.8.3之后的版本不再支持 Word2007。
 
 > HKEY_CURRENT_USER\Software\Wow6432Node\Microsoft\Office\Word\Addins
 
+### WPS 不显示插件
++ WPS 个人版需要安装最新版插件才能支持, 旧版插件只支持 WPS 专业增强版.
++ WPS 安装最新版后加载项未显示
+   + 解决方案: 确保插件安装未被拦截注册表操作, 运行WPS自带的修复工具重新注册组件即可.
+
 ### 其他无法显示插件的情况综述
 
 + Word的信任中心正在阻止加载项的运行
