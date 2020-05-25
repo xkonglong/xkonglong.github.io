@@ -4,6 +4,9 @@
 
 [https://mubu.com/doc2I2skpgW9o](https://mubu.com/doc2I2skpgW9o)
 
+## 1.8.3.1
++ 修复:一级标题大纲级别为2的bug.
+
 ## 1.8.3.0
 + 新增: 公文标题组添加角标按钮,可以快速打开段落设置对话框
 + 更改: 关于-访问官网指向为 https://gw.xkonglong.com
