@@ -79,7 +79,7 @@
 
 [广州互联网法院:种草效率神器](https://www.thepaper.cn/newsDetail_forward_2994934)
 
-[超强Word排版插件，论文、标书、报告、公文等排版，一键搞定](https://xw.qq.com/cmsid/20181218A15H0N/20181218A15H0N00)
+[超强Word排版插件，论文、标书、报告、公文等排版，一键搞定](https://www.sohu.com/a/234997366_100084657)
 
 [30000 字文档、论文 5 分钟完成格式排版，大学生和职场码字人士的救命插件！](https://www.bilibili.com/s/video/BV1Kb411G7Ds)
 []()
