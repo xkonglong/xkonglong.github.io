@@ -27,8 +27,12 @@ v1.0.8.3之后的版本不再支持 Word2007。
 
 目前已知一些品牌机预装的”Office201X家庭和学生版”有较大几率发生此问题。此类Office与安装版存在路径和权限差异，导致其无法很好兼容第三方插件。
 
-**解决方案：**
+**解决方案1：**
+下载由Excel催化剂作者开发的[office插件管理工具](https://www.lanzoui.com/i5CA0gbfq6j),可以有效修复该问题.  如果还不行, 还可以尝试方法2:卸载重装office.
 
+该插件具体使用说明,请参见Excel催化剂作者[公众号文章](https://mp.weixin.qq.com/s/HucMqiXCfshW0ZTD8MS-MQ),或微信关注"Excel催化剂".
+
+**解决方案2：**
 请卸载此类Store版本Office，然后下载安装 Office.
 
 卸载预装Office，请参见微软官网:[从 PC 卸载 Office](https://support.office.com/zh-cn/article/%E4%BB%8E-pc-%E5%8D%B8%E8%BD%BD-office-9dd49b83-264a-477a-8fcc-2fdf5dbf61d8?ui=zh-CN&rs=zh-CN&ad=CN)
