@@ -50,7 +50,7 @@ Office：
 
 ## 下载地址
 
-**网盘下载地址:**  [蓝奏云](https://www.lanzous.com/b557389/)
+**网盘下载地址:**  [蓝奏云](https://xkonglong.lanzoux.com/b00dbbvcj)
 
 **网盘下载地址:**  [城通网盘](https://xkonglong.ctfile.com/dir/15334738-33069050-810c82/)
 
