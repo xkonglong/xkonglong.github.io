@@ -2,7 +2,7 @@
 
 ## 更新计划  
 
-[https://mubu.com/doc2I2skpgW9o](https://mubu.com/doc2I2skpgW9o)
+[https://share.mubu.com/doc/ZFStDHCso](https://share.mubu.com/doc/ZFStDHCso)
 ## 1.8.8.0
 (2021年3月1日 发布)
 + 新增: 高级设置支持自定义默认西文字体
