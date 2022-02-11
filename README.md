@@ -56,7 +56,7 @@ Office：
 
 ## 捐赠支持
 
-![赞赏码](https://txc.gtimg.com/data/57503/2019/0419/8e0e3d1c3d167c105bebae81b74f3fde.jpg)
+![赞赏码](https://xkonglong.com/wp-content/uploads/2019/01/%E8%B5%9E%E8%B5%8F%E7%A0%81.jpg)
 
 软件免费,如果您用的顺手,又愿意支持作者,可通过微信扫描二维码打赏。
 
