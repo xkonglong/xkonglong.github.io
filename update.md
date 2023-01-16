@@ -4,6 +4,10 @@
 
 [https://share.mubu.com/doc/ZFStDHCso](https://share.mubu.com/doc/ZFStDHCso)
 
+## 2.2.0.0
+(2022年12月20日)
++ 更改: 完美适配 WPS 各版本图标(Word用户无需从2.1.0.0升级)
+
 ## 2.1.0.0
 (2022年7月14日 发布)
 + 新增: 实验室功能, 依据分节符拆分文档
