@@ -37,12 +37,6 @@ Office：
 首次安装：解压后先运行"首次安装导入证书.bat", 然后运行安装程序。
 ![成功导入证书](img/cert.png "导入证书")
 
-<ImageZoom 
-  src="img/cert.png" 
-  :border="true" 
-  width="300"
-/>
-
 内网用户：请提前[下载并安装附加组件](https://xkonglong.lanzoui.com/iZeNBvv5tef)。
 
 ### 杀软报毒
