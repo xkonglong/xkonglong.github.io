@@ -99,4 +99,4 @@ VBA脚本文件的后缀名通常为`.vba`或者`.bas`。
 
 ## 四、获取和分享VBA脚本
 
-+ 点此进入 [VBA脚本讨论组](https://github.com/xkonglong/gw/discussions) ， 获取和分享 VBA 脚本
++ 点此进入 Github [VBA脚本讨论组](https://github.com/xkonglong/gw/discussions) ， 获取和分享 VBA 脚本
