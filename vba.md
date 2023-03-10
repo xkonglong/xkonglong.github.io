@@ -79,7 +79,8 @@ VBA脚本文件的后缀名通常为`.vba`或者`.bas`。
 免费切换VB环境的方法: https://www.bilibili.com/video/BV19y4y1X7DE/
 
 第二步: WPS Office 选项中 勾选“信任对于VB项目的访问”
-![image](https://user-images.githubusercontent.com/9131496/222066986-92073586-feaf-46de-a7b8-f0002b263e32.png)
+
+![image](img/EnableWPSvba.png)
 
 
 ##  三、VBA脚本制作篇
