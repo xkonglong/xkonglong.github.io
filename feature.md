@@ -32,7 +32,7 @@
 
 ## 文字样式
 
-![快速标题格式](https://mubu.com/document_image/514faee8-b2b0-4299-9cd7-4e674e92edb0-303000.jpg)
+![快速标题格式](img/formatText.gif)
 
 该区域可以选定文字进行快速设置， 比如公文大标题、一级至四级公文标题、正文格式。
 
@@ -40,7 +40,7 @@
 
 点击“公文样式”，可以一键生成常用公文样式，通过“样式侧栏”对文字进行段落级别的快速设置。
 
-![公文样式](https://mubu.com/document_image/b7f9bcce-b334-4581-8b4a-abad6264a08e-303000.jpg)
+![公文样式](img/style.png)
 
 ## 插入功能
 
@@ -63,7 +63,7 @@
 
 ## 高级设置
 
-![关于插件对话框](https://mubu.com/document_image/fd1a9f64-a6e9-4394-9aba-b8a8033d0558-303000.jpg)
+![关于插件对话框](img/aboutSetting.gif)
 
 在关于界面，您可以为作者的辛勤付出，用微信扫码赞助。
 
