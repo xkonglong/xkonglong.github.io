@@ -110,6 +110,10 @@ v1.0.8.3之后的版本不再支持 Word2007。
 
 私密渠道: [![电子邮件](http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png)](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bBQHAwILAAMCCywdHUIPAwE) 
 
-更多帮助请入QQ群(1)[661211620](http://shang.qq.com/wpa/qunwpa?idkey=5f81cf0d069901cafc1027691fa8c461dfc996362c930aea0eb2e29589743e1a)  QQ群(2) [956898287](http://shang.qq.com/wpa/qunwpa?idkey=499ea997e2978b0206ad52dbccd28cd2f9efab69c80417d9b0881bea843e82f8)
+更多帮助
+
+QQ频道:点击加入QQ频道 [小恐龙公文排版助手](https://pd.qq.com/s/exu99qgjm)
+
+QQ群(1)[661211620](http://shang.qq.com/wpa/qunwpa?idkey=5f81cf0d069901cafc1027691fa8c461dfc996362c930aea0eb2e29589743e1a)  QQ群(2) [956898287](http://shang.qq.com/wpa/qunwpa?idkey=499ea997e2978b0206ad52dbccd28cd2f9efab69c80417d9b0881bea843e82f8)
 
 入群口令: xkonglong
