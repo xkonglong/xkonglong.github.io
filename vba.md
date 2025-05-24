@@ -76,12 +76,14 @@ VBA脚本文件的后缀名通常为`.vba`或者`.bas`。
 
 第一步: 最新版WPS Office默认不再支持VBA，请在开发工具->切换到VB环境 ，或者更换其他支持VBA版本的WPS，
 
+
 免费切换VB环境的方法: https://www.bilibili.com/video/BV19y4y1X7DE/
 
 第二步: WPS Office 选项中 勾选“信任对于VB项目的访问”
 
 ![image](img/EnableWPSvba.png)
 
+如果以上操作后，还是提示同样信息，请确认VB环境安装正确。您可以通过录制VB宏来判断VB环境是否正常。如果不正常，请尝试修复WPS。
 
 ##  三、VBA脚本制作篇
 
