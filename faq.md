@@ -107,7 +107,7 @@ v1.0.8.3之后的版本不再支持 Word2007。
 
 **解决方法:** 小恐龙公文排版助手并未使用任何宏，事实上，连续点击确定后，公文排版助手仍然可以正常使用。
 出现此问题，多数是精简版Office没有内置VBA模块导致的出错提示，单独安装VBA或者修复Office即可。 
-[点此下载VBA单独安装模块](https://xkonglong.lanzoui.com/i3kez3a)。
+[点此下载VBA单独安装模块](https://xkonglong.lanzouo.com/iKscR3kez3a)。
 
 ## WPS 用户不显示插件
 + WPS 个人版需要安装最新版插件才能支持, 旧版插件只支持 WPS 专业增强版.
