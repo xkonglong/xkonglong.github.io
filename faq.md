@@ -23,6 +23,8 @@
 导入完成后, 按照上述步骤再次导入到"受信任的发布者". 
 导入完成后. 打开WORD的 COM加载项, 勾选"公文排版助手"即可正常使用.
 
+如果问题依旧，请参看[微软官网的解决办法，需要修改注册表](https://learn.microsoft.com/zh-cn/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior?view=vs-2022&tabs=csharp)
+
 
 ## 插件加载
 
