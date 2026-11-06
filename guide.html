@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>入门指引 · 小恐龙公文排版助手</title>
+<meta name="description" content="小恐龙公文排版助手的功能简介、环境需求、安装说明与下载地址。">
+<meta name="theme-color" content="#b3262c">
+<meta property="og:title" content="入门指引 · 小恐龙公文排版助手">
+<meta property="og:description" content="小恐龙公文排版助手的功能简介、环境需求、安装说明与下载地址。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gw.xkonglong.com/guide.html">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('xkl-theme');
+    if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-seal" aria-hidden="true">公</span>
+      <span class="brand-text">
+        <span class="brand-name">小恐龙公文排版助手</span>
+        <span class="brand-sub">for Word &amp; WPS</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="guide.html" aria-current="page">入门指引</a>
+        <a href="feature.html">功能介绍</a>
+        <a href="vba.html">VBA 脚本</a>
+        <a href="faq.html">常见问题</a>
+        <a href="update.html">更新日志</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题" title="切换深浅主题"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></button>
+      <a class="btn-nav" href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a>
+      <button class="icon-btn burger" id="menu-toggle" type="button" aria-label="打开菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">首页</a>
+  <a href="guide.html">入门指引</a>
+  <a href="feature.html">功能介绍</a>
+  <a href="vba.html">VBA 脚本</a>
+  <a href="faq.html">常见问题</a>
+  <a href="update.html">更新日志</a>
+  <a href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a>
+</div>
+
+<main class="container">
+  <div class="doc-layout">
+    <aside class="doc-aside">
+      <div class="doc-aside-inner">
+
+      <p class="aside-label">本章目录</p>
+      <ul class="aside-nav">
+          <li><a href="#sec-1">功能简介</a></li>
+          <li><a href="#sec-2">环境需求</a></li>
+          <li><a href="#sec-3">安装说明</a></li>
+          <li><a href="#sec-5">下载地址</a></li>
+          <li><a href="#sec-6">捐赠支持</a></li>
+      </ul>
+
+      <p class="aside-label">其他文档</p>
+      <div class="aside-links">
+        <a href="index.html">← 返回首页</a>
+        <a href="https://github.com/xkonglong/gw/discussions" target="_blank" rel="noopener">VBA 脚本讨论组</a>
+        <a href="https://support.qq.com/products/57503" target="_blank" rel="noopener">问题反馈</a>
+      </div>
+
+      </div>
+    </aside>
+    <div class="doc-main">
+      <div class="doc-head">
+        <span class="eyebrow">START HERE</span>
+        <h1>入门指引</h1>
+        <p>从下载安装到第一次排版，三分钟即可上手。</p>
+      </div>
+
+      <article class="prose">
+<h2 id="sec-1">功能简介</h2>
+<p><img src="img/xklbanner.jpg" alt="小恐龙公文排版助手"></p>
+<p>根据《党政机关公文格式国家标准》(GB/T 9704—2012)的格式要求，快速设置页面版式、快速设置常用文字格式、插入常用符号、版头、版记、公文页码、红线等。</p>
+<p>支持对文字的快速排版，中文首行缩进2字符、删除空白，断句重排等。</p>
+<p>支持对文档盖章、可以在文档同目录下生成 PDF/ doc /图片 格式的副本。</p>
+<p>可广泛用于各类规范文本的排版。</p>
+<p><strong>本插件完全免费开源，承诺不含任何恶意代码。</strong></p>
+<h2 id="sec-2">环境需求</h2>
+<p>操作系统： win7/win8/win10/win11</p>
+<p>Office：</p>
+<p>MS Word 2007 (最高支持版本v1.0.8.3,之后版本不再支持2007)<br>MS Word 2010/2013/2016/2019/2021<br>MS Word 365<br>WPS Office 2013/2016/2019专业版<br>WPS Office 个人版(自v1.8.2.0起支持)</p>
+<p>运行库需求: NetFrame4.0 和 vsto</p>
+<aside class="note"><p>1.0.8.3 适用于 Word2007,有离线安装版已内置运行库组件,无需单独下载.适合内网用户.之后版本均为智能安装版，会自动从微软官网下载，内网用户可单独下载附加组件.</p></aside>
+<h2 id="sec-3">安装说明</h2>
+<p>首次安装：解压后先运行"首次安装导入证书.bat", 然后运行安装程序。 <img src="img/cert.png" alt="成功导入证书"></p>
+<p>内网用户：请提前<a href="https://xkonglong.lanzoui.com/iZeNBvv5tef" target="_blank" rel="noopener">下载并安装附加组件</a>。</p>
+<h3 id="sec-4">杀软报毒</h3>
+<ul>
+<li>作者承诺软件源码开放，不含任何恶意代码。</li>
+<li>使用360杀毒或360安全管家的用户，若遇到病毒提示，可提交给<a href="http://sampleup.sd.360.cn/index.php" target="_blank" rel="noopener">360官方误杀申报</a>。</li>
+<li>近期 Windows10 自带杀软误报问题, 目前微软回复已移除病毒库,不会再误报。</li>
+<li>在保障<strong>官网下载</strong>的前提下，安装时也可暂时禁用杀毒软件。</li>
+</ul>
+<h2 id="sec-5">下载地址</h2>
+<p><strong>网盘下载地址:</strong>  <a href="https://xkonglong.lanzoux.com/b00dbbvcj" target="_blank" rel="noopener">蓝奏云</a></p>
+<p><strong>网盘下载地址:</strong>  <a href="https://url38.ctfile.com/d/15334738-33069050-4ebf20?p=9561" target="_blank" rel="noopener">城通网盘 密码9561</a></p>
+<p><strong>网盘下载地址:</strong>  <a href="https://www.123pan.com/s/BYLA-CZwHv" target="_blank" rel="noopener">123云盘</a></p>
+<p><strong> 源码下载地址:</strong> <a href="https://github.com/xkonglong/gw/" target="_blank" rel="noopener">Github</a></p>
+<h2 id="sec-6">捐赠支持</h2>
+<p><img src="img/zsm.jpg" alt="赞赏码"></p>
+<p>软件免费,如果您用的顺手,又愿意支持作者,可通过微信扫描二维码打赏。</p>
+      </article>
+      <nav class="doc-foot">
+        
+        <a class="next" href="feature.html"><small>下一篇</small><strong>功能介绍</strong></a>
+      </nav>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-seal" aria-hidden="true">公</span>
+          <span class="brand-text">
+            <span class="brand-name">小恐龙公文排版助手</span>
+            <span class="brand-sub">for Word &amp; WPS</span>
+          </span>
+        </a>
+        <p>依据《党政机关公文格式》(GB/T 9704—2012) 的格式要求，快速设置页面版式、文字格式，插入红头、红线、版记线与页码。</p>
+        <p>本插件完全免费开源，承诺不含任何恶意代码。</p>
+      </div>
+      <div class="footer-col">
+        <h5>文档</h5>
+        <ul>
+          <li><a href="guide.html">入门指引</a></li>
+          <li><a href="feature.html">功能介绍</a></li>
+          <li><a href="vba.html">VBA 脚本指南</a></li>
+          <li><a href="faq.html">常见问题</a></li>
+          <li><a href="update.html">更新日志</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>下载与交流</h5>
+        <ul>
+          <li><a href="#download">下载安装包</a></li>
+          <li><a href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a></li>
+          <li><a href="https://github.com/xkonglong/gw/discussions" target="_blank" rel="noopener">VBA 脚本讨论组</a></li>
+          <li><a href="https://pd.qq.com/s/exu99qgjm" target="_blank" rel="noopener">QQ 频道</a></li>
+          <li><a href="https://support.qq.com/products/57503" target="_blank" rel="noopener">问题反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2020–2026 小恐龙工作室 · 本站为开源项目文档站点</span>
+      <span>gw.xkonglong.com · 小恐龙公文排版助手 v3.8.0.0</span>
+    </div>
+  </div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script src="assets/app.js" defer></script>
+
+</body>
+</html>

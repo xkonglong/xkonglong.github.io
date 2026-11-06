@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>功能介绍 · 小恐龙公文排版助手</title>
+<meta name="description" content="版面设置、文字样式、插入功能、副本保密与高级设置，逐项了解公文排版助手的能力。">
+<meta name="theme-color" content="#b3262c">
+<meta property="og:title" content="功能介绍 · 小恐龙公文排版助手">
+<meta property="og:description" content="版面设置、文字样式、插入功能、副本保密与高级设置，逐项了解公文排版助手的能力。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gw.xkonglong.com/feature.html">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('xkl-theme');
+    if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-seal" aria-hidden="true">公</span>
+      <span class="brand-text">
+        <span class="brand-name">小恐龙公文排版助手</span>
+        <span class="brand-sub">for Word &amp; WPS</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="guide.html">入门指引</a>
+        <a href="feature.html" aria-current="page">功能介绍</a>
+        <a href="vba.html">VBA 脚本</a>
+        <a href="faq.html">常见问题</a>
+        <a href="update.html">更新日志</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题" title="切换深浅主题"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></button>
+      <a class="btn-nav" href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a>
+      <button class="icon-btn burger" id="menu-toggle" type="button" aria-label="打开菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">首页</a>
+  <a href="guide.html">入门指引</a>
+  <a href="feature.html">功能介绍</a>
+  <a href="vba.html">VBA 脚本</a>
+  <a href="faq.html">常见问题</a>
+  <a href="update.html">更新日志</a>
+  <a href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a>
+</div>
+
+<main class="container">
+  <div class="doc-layout">
+    <aside class="doc-aside">
+      <div class="doc-aside-inner">
+
+      <p class="aside-label">本章目录</p>
+      <ul class="aside-nav">
+          <li><a href="#sec-1">界面综述</a></li>
+          <li><a href="#sec-2">版面设置</a></li>
+          <li><a href="#sec-6">文字样式</a></li>
+          <li><a href="#sec-7">插入功能</a></li>
+          <li><a href="#sec-8">副本保密</a></li>
+          <li><a href="#sec-9">高级设置</a></li>
+          <li><a href="#sec-10">应用场景</a></li>
+      </ul>
+
+      <p class="aside-label">其他文档</p>
+      <div class="aside-links">
+        <a href="index.html">← 返回首页</a>
+        <a href="https://github.com/xkonglong/gw/discussions" target="_blank" rel="noopener">VBA 脚本讨论组</a>
+        <a href="https://support.qq.com/products/57503" target="_blank" rel="noopener">问题反馈</a>
+      </div>
+
+      </div>
+    </aside>
+    <div class="doc-main">
+      <div class="doc-head">
+        <span class="eyebrow">FEATURES</span>
+        <h1>功能介绍</h1>
+        <p>六大功能区，覆盖公文排版的完整流程。</p>
+      </div>
+
+      <article class="prose">
+<h2 id="sec-1">界面综述</h2>
+<p><img src="img/xklbanner.jpg" alt="工具栏外观"> 工具栏分为"版面"、"公文标题"、"文字格式"、“插入”、“其他”、“关于”，共六个分组区域。</p>
+<p>分别对应了"版面设置","文字样式","插入功能","副本和保密设置","设置和帮助"</p>
+<h2 id="sec-2">版面设置</h2>
+<p><img src="img/papersetup.jpg" alt="页面设置"></p>
+<p>快速设置公文所需的页边距、行数和字数控制、嵌入不常用字体等。</p>
+<p>页面设置会自动保存上次设置，无需每次重复调整。</p>
+<h3 id="sec-3">中文缩进和顶格</h3>
+<p>中文缩进可以快速对选定的文字设置段落首行缩进2字符。顶格则是取消缩进。</p>
+<h3 id="sec-4">删除页眉横线</h3>
+<p>插入页码或者对页眉页脚的操作，可能导致 Word 自动为页眉添加横线，使用本功能可以快速去掉横线。</p>
+<h3 id="sec-5">排版菜单</h3>
+<p>可以快速实现“断行重排”、“删除空白”、“删除多余空行”、“全半角替换”、“换行转回车”等等。</p>
+<p>尤其适合对复制自 pdf 或网页文字的快速排版。</p>
+<h2 id="sec-6">文字样式</h2>
+<p><img src="img/formatText.gif" alt="快速标题格式"></p>
+<p>该区域可以选定文字进行快速设置， 比如公文大标题、一级至四级公文标题、正文格式。</p>
+<p>可以快速替换字体，解决公字体格式不统一的问题。</p>
+<p>点击“公文样式”，可以一键生成常用公文样式，通过“样式侧栏”对文字进行段落级别的快速设置。</p>
+<p><img src="img/style.png" alt="公文样式"></p>
+<h2 id="sec-7">插入功能</h2>
+<ul>
+<li>快速插入公文红头、红线、版记线、装订线。</li>
+<li>快速插入页码（居中，居右，外侧）</li>
+<li>快速插入公文格式日期</li>
+<li>快速插入公文常用符号，比如六角括号和★等。</li>
+<li>快速插入公章（链接式/嵌入式）</li>
+<li>快速插入横版页面</li>
+</ul>
+<h2 id="sec-8">副本保密</h2>
+<p>可按照实际需求用于文档分享或备份。</p>
+<p>副本功能可以将文档快速生成为 pdf/doc/图片 等格式，功能堪比 WPS 收费项目。</p>
+<p>保密功能可以快速设置密码和读写权限。</p>
+<p>朗读功能可以便于校对文本，测试演讲效果。</p>
+<h2 id="sec-9">高级设置</h2>
+<p><img src="img/aboutSetting.gif" alt="关于插件对话框"></p>
+<p>在关于界面，您可以为作者的辛勤付出，用微信扫码赞助。</p>
+<p>您也可以查看系统信息和插件版本并检查更新。</p>
+<p>点击“关于”插件，可以进入高级设置，为每个公文格式指定字体名称和大小。</p>
+<h2 id="sec-10">应用场景</h2>
+<p>公文排版助手不仅可以用于政府机关常见的15种公文, 也可以广泛用于各类规范文本的排版。</p>
+<p>以下是一些常见应用场景，均为实际用户自行分享的文章。</p>
+<p><a href="https://www.thepaper.cn/newsDetail_forward_2994934" target="_blank" rel="noopener">广州互联网法院:种草效率神器</a></p>
+<p><a href="https://www.sohu.com/a/234997366_100084657" target="_blank" rel="noopener">超强Word排版插件，论文、标书、报告、公文等排版，一键搞定</a></p>
+<p><a href="https://www.bilibili.com/s/video/BV1Kb411G7Ds" target="_blank" rel="noopener">30000 字文档、论文 5 分钟完成格式排版，大学生和职场码字人士的救命插件！</a> []() []() []() []()</p>
+      </article>
+      <nav class="doc-foot">
+        <a class="prev" href="guide.html"><small>上一篇</small><strong>入门指引</strong></a>
+        <a class="next" href="vba.html"><small>下一篇</small><strong>VBA 脚本指南</strong></a>
+      </nav>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-seal" aria-hidden="true">公</span>
+          <span class="brand-text">
+            <span class="brand-name">小恐龙公文排版助手</span>
+            <span class="brand-sub">for Word &amp; WPS</span>
+          </span>
+        </a>
+        <p>依据《党政机关公文格式》(GB/T 9704—2012) 的格式要求，快速设置页面版式、文字格式，插入红头、红线、版记线与页码。</p>
+        <p>本插件完全免费开源，承诺不含任何恶意代码。</p>
+      </div>
+      <div class="footer-col">
+        <h5>文档</h5>
+        <ul>
+          <li><a href="guide.html">入门指引</a></li>
+          <li><a href="feature.html">功能介绍</a></li>
+          <li><a href="vba.html">VBA 脚本指南</a></li>
+          <li><a href="faq.html">常见问题</a></li>
+          <li><a href="update.html">更新日志</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>下载与交流</h5>
+        <ul>
+          <li><a href="#download">下载安装包</a></li>
+          <li><a href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a></li>
+          <li><a href="https://github.com/xkonglong/gw/discussions" target="_blank" rel="noopener">VBA 脚本讨论组</a></li>
+          <li><a href="https://pd.qq.com/s/exu99qgjm" target="_blank" rel="noopener">QQ 频道</a></li>
+          <li><a href="https://support.qq.com/products/57503" target="_blank" rel="noopener">问题反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2020–2026 小恐龙工作室 · 本站为开源项目文档站点</span>
+      <span>gw.xkonglong.com · 小恐龙公文排版助手 v3.8.0.0</span>
+    </div>
+  </div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script src="assets/app.js" defer></script>
+
+</body>
+</html>

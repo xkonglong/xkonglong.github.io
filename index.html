@@ -1,78 +1,374 @@
-<!DOCTYPE >
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>小恐龙公文排版助手 for Word/WPS</title>
-    <link  rel="stylesheet"   href="./docute.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小恐龙公文排版助手 for Word/WPS · 一键公文排版</title>
+<meta name="description" content="小恐龙公文排版助手：依据 GB/T 9704—2012 的一键公文排版插件，支持 Word 2007–365 与 WPS，免费开源。">
+<meta name="theme-color" content="#b3262c">
+<meta property="og:title" content="小恐龙公文排版助手 for Word/WPS · 一键公文排版">
+<meta property="og:description" content="小恐龙公文排版助手：依据 GB/T 9704—2012 的一键公文排版插件，支持 Word 2007–365 与 WPS，免费开源。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gw.xkonglong.com/">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('xkl-theme');
+    if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
 
-  <body>
-    <div id="docute"></div>
-     <script src="./docute.js"></script>
-    <script>
-      new Docute({
-        target: '#docute',
-        detectSystemDarkTheme: true,
-        darkThemeToggler: true,
-        layout: 'narrow',
-        footer: `Power by <a href="http://xkonglong.com">小恐龙工作室</a> 2020-2023 年`,
-        nav: [
-          {
-            title: '首页',
-            link: '/'
-          },
-          {
-            title: '小恐龙工作室',
-            link: 'https://xkonglong.com'
-          }
-        ],
-        sidebar: [
-          {
-            title: '入门指引',
-            link:'/'
-          },
-          {
-            title: '功能介绍',
-            link:'/feature'
-          
-          },
-          {
-            title: 'VBA脚本',
-            link:'/vba'
-          },
-          {
-            title: '常见问题',
-            link:'/faq'
-          },
-          {
-            title: '更新日志',
-            link:'/update'
-          
-          },
-          // An external link
-          {
-            title: '小恐龙工作室',
-            link: 'https://xkonglong.com'
-          },
-          {
-            title: 'QQ频道-公文排版助手',
-            link:'https://pd.qq.com/s/exu99qgjm'
-          },
-          {
-            title: 'Github VBA讨论组',
-            link: 'https://github.com/xkonglong/gw/discussions'
-          }
-        ]
-      })
-    
-    </script>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-seal" aria-hidden="true">公</span>
+      <span class="brand-text">
+        <span class="brand-name">小恐龙公文排版助手</span>
+        <span class="brand-sub">for Word &amp; WPS</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+        <a href="index.html" aria-current="page">首页</a>
+        <a href="guide.html">入门指引</a>
+        <a href="feature.html">功能介绍</a>
+        <a href="vba.html">VBA 脚本</a>
+        <a href="faq.html">常见问题</a>
+        <a href="update.html">更新日志</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题" title="切换深浅主题"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></button>
+      <a class="btn-nav" href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a>
+      <button class="icon-btn burger" id="menu-toggle" type="button" aria-label="打开菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">首页</a>
+  <a href="guide.html">入门指引</a>
+  <a href="feature.html">功能介绍</a>
+  <a href="vba.html">VBA 脚本</a>
+  <a href="faq.html">常见问题</a>
+  <a href="update.html">更新日志</a>
+  <a href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a>
+</div>
 
-  </body>
-  
-  
-  
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="hero-badge"><b>最新版 v3.8.0.0</b><i></i>完全免费开源 · 不含恶意代码</div>
+        <h1>公文排版，<em>一键成文</em></h1>
+        <div class="hero-sub-en">小恐龙公文排版助手 · for Word &amp; WPS</div>
+        <p class="hero-lead">依据《党政机关公文格式》（GB/T 9704—2012）的要求，快速设置页面版式与文字格式，插入红头、红线、版记线、页码，并对复制来的文字做<strong>断行重排、删除空白</strong>等批量清理。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3v11M7 10l5 5 5-5M4 20h16"/></svg> 免费下载</a>
+          <a class="btn btn-ghost" href="feature.html">查看功能介绍 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="hero-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 13l4 4 10-10"/></svg> Word 2007 – 365</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 13l4 4 10-10"/></svg> WPS 2013 – 365</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 13l4 4 10-10"/></svg> Win 7 – 11</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="window">
+          <div class="window-bar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="window-title">Microsoft Word · 公文分组</span>
+          </div>
+          <img src="img/c1.png" alt="小恐龙公文排版助手在 Word 中的界面" width="1291" height="947">
+        </div>
+        <div class="hero-stamp" aria-hidden="true">公文<br>排版</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fact-bar">
+    <div class="container fact-grid">
+      <div class="fact"><strong>GB/T 9704—2012</strong><span>排版依据 · 党政机关公文格式</span></div>
+      <div class="fact"><strong>27 行 × 28 字</strong><span>标准版面 · 默认精确实现</span></div>
+      <div class="fact"><strong>Word 2007 – 365</strong><span>兼容 Microsoft Office</span></div>
+      <div class="fact"><strong>WPS 2013 – 365</strong><span>含个人版 · 已适配 WPS365</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">FEATURES</span>
+        <h2 class="section-title">一个插件，覆盖公文排版全流程</h2>
+        <p class="section-desc">从页面版式到红头版记，从文字清理到 VBA 自动化，把公文排版里最费时的重复动作都收进工具栏。</p>
+      </div>
+      <div class="cards">
+
+      <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 9v11"/></svg></div>
+        <h3>一键页面版式</h3>
+        <p>按国标设置页边距、每页行数与每行字数，嵌入不常用字体。设置自动保存，无需每次重复调整。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 6V4h16v2M12 4v16M8 20h8"/></svg></div>
+        <h3>公文标题与样式</h3>
+        <p>一至四级公文标题、正文格式快速套用，一键生成公文样式表，配合样式侧栏做段落级排版。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 19l9-9M14 5l1.5 3.5L19 10l-3.5 1.5L14 15l-1.5-3.5L9 10l3.5-1.5z"/><path d="M4 21l1-1"/></svg></div>
+        <h3>排版清理工具</h3>
+        <p>断行重排、删除空白与多余空行、全半角替换、换行转回车，尤其适合处理来自 PDF 或网页的文字。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 21h16M6 17h12v-2.5c0-1.4-1.1-2.5-2.5-2.5H8.5C7.1 12 6 13.1 6 14.5z"/><path d="M12 12V8"/><circle cx="12" cy="6" r="2"/></svg></div>
+        <h3>公文部件插入</h3>
+        <p>红头、红线、版记线、装订线、居中/居右/外侧页码、公文格式日期、六角括号与★等常用符号。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>副本与保密</h3>
+        <p>同目录一键生成 PDF / doc / 图片副本，快速设置密码与读写权限，朗读功能辅助校对。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
+        <h3>VBA 脚本扩展</h3>
+        <p>即用即走，脚本不写入文档；代码可见、可改、可分享，把重复劳动交给脚本完成。</p>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="screens">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">SCREENSHOTS</span>
+        <h2 class="section-title">实机界面</h2>
+        <p class="section-desc">插件在 Word / WPS 中以功能区分组的形式融入，所有按钮都带屏幕提示。</p>
+      </div>
+      <div class="shots">
+
+        <figure class="shot">
+          <div class="shot-img"><img src="img/formatText.gif" alt="快速标题格式" loading="lazy"></div>
+          <figcaption class="shot-meta"><h4>快速标题格式</h4><p>选中文字后一键套用一至四级公文标题与正文格式，动图演示。</p></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="shot-img"><img src="img/papersetup.jpg" alt="页面设置" loading="lazy"></div>
+          <figcaption class="shot-meta"><h4>页面设置</h4><p>页边距、行数页数、行间距与嵌入字体，一次设定长期生效。</p></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="shot-img"><img src="img/style.png" alt="公文样式" loading="lazy"></div>
+          <figcaption class="shot-meta"><h4>公文样式</h4><p>一键生成常用公文样式，通过样式侧栏快速设置段落格式。</p></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="shot-img"><img src="img/aboutSetting.gif" alt="高级设置" loading="lazy"></div>
+          <figcaption class="shot-meta"><h4>高级设置</h4><p>为每级公文字体指定名称与字号，并查看版本、检查更新。</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="start">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">QUICK START</span>
+        <h2 class="section-title">三步开始使用</h2>
+        <p class="section-desc">首次安装需要先导入签名证书，之后安装程序会自动完成部署与运行库准备。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">STEP 01</span>
+          <h4>下载并解压</h4>
+          <p>从下方任一网盘通道下载最新版安装包，解压到本地。</p>
+        </div>
+        <div class="step">
+          <span class="step-num">STEP 02</span>
+          <h4>导入证书</h4>
+          <p>运行「首次安装导入证书.bat」，出现证书导入成功的提示后再继续。</p>
+        </div>
+        <div class="step">
+          <span class="step-num">STEP 03</span>
+          <h4>运行安装程序</h4>
+          <p>安装完成后打开 Word / WPS，功能区即出现「公文」分组。</p>
+        </div>
+      </div>
+      <div class="notice">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M12 11v5"/></svg>
+        <div>
+          <p><strong>内网用户：</strong>智能安装版会从微软官网下载组件，内网环境请提前单独下载并安装附加组件。</p>
+          <p><strong>杀软提示：</strong>作者承诺源码开放、不含任何恶意代码；如需排查，可提交 360 官方误杀申报，或在确认官网下载的前提下临时关闭杀毒软件。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="docs">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">DOCUMENTATION</span>
+        <h2 class="section-title">文档与帮助</h2>
+        <p class="section-desc">原站点按入门、功能、脚本、问答、日志组织，这里保留同样的结构，并改成更适合检索的阅读版式。</p>
+      </div>
+      <div class="doc-cards">
+
+      <a class="doc-card" href="guide.html">
+        <span class="tag">START</span>
+        <h4>入门指引</h4>
+        <p>环境需求、安装步骤、杀软提示与下载地址。</p>
+        <span class="more">查看文档</span>
+      </a>
+
+      <a class="doc-card" href="feature.html">
+        <span class="tag">FEATURES</span>
+        <h4>功能介绍</h4>
+        <p>六大功能区逐项说明，含实机截图与动图演示。</p>
+        <span class="more">查看文档</span>
+      </a>
+
+      <a class="doc-card" href="vba.html">
+        <span class="tag">EXTEND</span>
+        <h4>VBA 脚本</h4>
+        <p>脚本怎么用、怎么写，以及常见报错的解决方式。</p>
+        <span class="more">查看文档</span>
+      </a>
+
+      <a class="doc-card" href="faq.html">
+        <span class="tag">FAQ</span>
+        <h4>常见问题</h4>
+        <p>安装 1001、证书不受信任、插件不显示、WPS 兼容……</p>
+        <span class="more">查看文档</span>
+      </a>
+
+      <a class="doc-card" href="update.html">
+        <span class="tag">LOG</span>
+        <h4>更新日志</h4>
+        <p>从首次发布到 v3.8.0.0 的完整版本记录。</p>
+        <span class="more">查看文档</span>
+      </a>
+
+      <a class="doc-card" href="index.html#download">
+        <span class="tag">DOWNLOAD</span>
+        <h4>下载安装</h4>
+        <p>蓝奏云、城通网盘、123 云盘与 GitHub 源码。</p>
+        <span class="more">查看下载</span>
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="download">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">DOWNLOAD</span>
+        <h2 class="section-title">下载安装包</h2>
+        <p class="section-desc">最新版本 v3.8.0.0（2026年4月13日）。如遇下载限速，可换用其他通道；源码可在 GitHub 获取。</p>
+      </div>
+      <div class="downloads">
+
+      <a class="dl" href="https://xkonglong.lanzoux.com/b00dbbvcj" target="_blank" rel="noopener">
+        <span class="dl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M7 18h10a4 4 0 0 0 .6-8 5.5 5.5 0 0 0-10.4-1.4A3.8 3.8 0 0 0 7 18z"/><path d="M12 11v4M10 12.8l2 2 2-2"/></svg></span>
+        <span class="dl-body"><strong>蓝奏云</strong><span>推荐 · 免登录直接下载</span></span>
+        <span class="dl-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="dl" href="https://www.123pan.com/s/BYLA-CZwHv" target="_blank" rel="noopener">
+        <span class="dl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M7 18h10a4 4 0 0 0 .6-8 5.5 5.5 0 0 0-10.4-1.4A3.8 3.8 0 0 0 7 18z"/><path d="M12 11v4M10 12.8l2 2 2-2"/></svg></span>
+        <span class="dl-body"><strong>123 云盘</strong><span>备用下载通道</span></span>
+        <span class="dl-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="dl" href="https://url38.ctfile.com/d/15334738-33069050-4ebf20?p=9561" target="_blank" rel="noopener">
+        <span class="dl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M7 18h10a4 4 0 0 0 .6-8 5.5 5.5 0 0 0-10.4-1.4A3.8 3.8 0 0 0 7 18z"/><path d="M12 11v4M10 12.8l2 2 2-2"/></svg></span>
+        <span class="dl-body"><strong>城通网盘</strong><span>提取密码 9561</span></span>
+        <span class="dl-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="dl" href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">
+        <span class="dl-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 5.4 3.4 9.9 8.2 11.5.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1 .3 3.2 1.2a11 11 0 0 1 5.8 0c3.2-.9 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6C18.6 22.1 22 17.6 22 12.2 22 6.6 17.5 2 12 2z"/></svg></span>
+        <span class="dl-body"><strong>GitHub 源码</strong><span>开源仓库 · 可自行编译</span></span>
+        <span class="dl-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      </div>
+      <div class="notice">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M12 11v5"/></svg>
+        <div>
+          <p><strong>附加组件：</strong>内网或无法访问微软下载中心时，请先单独下载并安装附加组件，再进行插件安装。</p>
+          <p><strong>Word 2007：</strong>v1.0.8.3 为最后支持版本，且提供内置运行库的离线安装版。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="donate">
+    <div class="container">
+      <div class="donate">
+        <div>
+          <h3>软件免费，支持作者</h3>
+          <p>插件一直免费开源。如果它帮你省下了加班的夜晚，可以用微信扫码随意打赏。</p>
+          <p>赞赏仅代表心意，不影响任何功能的使用。双击插件里的赞赏码，还可以打开专用工具修改默认配置文件。</p>
+          <small>源码与讨论：github.com/xkonglong/gw</small>
+        </div>
+        <div class="donate-qr">
+          <img src="img/zsm.jpg" alt="微信赞赏码" loading="lazy">
+          <span>微信扫码赞赏</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-seal" aria-hidden="true">公</span>
+          <span class="brand-text">
+            <span class="brand-name">小恐龙公文排版助手</span>
+            <span class="brand-sub">for Word &amp; WPS</span>
+          </span>
+        </a>
+        <p>依据《党政机关公文格式》(GB/T 9704—2012) 的格式要求，快速设置页面版式、文字格式，插入红头、红线、版记线与页码。</p>
+        <p>本插件完全免费开源，承诺不含任何恶意代码。</p>
+      </div>
+      <div class="footer-col">
+        <h5>文档</h5>
+        <ul>
+          <li><a href="guide.html">入门指引</a></li>
+          <li><a href="feature.html">功能介绍</a></li>
+          <li><a href="vba.html">VBA 脚本指南</a></li>
+          <li><a href="faq.html">常见问题</a></li>
+          <li><a href="update.html">更新日志</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>下载与交流</h5>
+        <ul>
+          <li><a href="#download">下载安装包</a></li>
+          <li><a href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a></li>
+          <li><a href="https://github.com/xkonglong/gw/discussions" target="_blank" rel="noopener">VBA 脚本讨论组</a></li>
+          <li><a href="https://pd.qq.com/s/exu99qgjm" target="_blank" rel="noopener">QQ 频道</a></li>
+          <li><a href="https://support.qq.com/products/57503" target="_blank" rel="noopener">问题反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2020–2026 小恐龙工作室 · 本站为开源项目文档站点</span>
+      <span>gw.xkonglong.com · 小恐龙公文排版助手 v3.8.0.0</span>
+    </div>
+  </div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script src="assets/app.js" defer></script>
+
+</body>
 </html>

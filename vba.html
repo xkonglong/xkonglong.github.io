@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VBA 脚本指南 · 小恐龙公文排版助手</title>
+<meta name="description" content="用 VBA 脚本扩展公文排版助手：使用方法、常见问题、脚本制作与分享。">
+<meta name="theme-color" content="#b3262c">
+<meta property="og:title" content="VBA 脚本指南 · 小恐龙公文排版助手">
+<meta property="og:description" content="用 VBA 脚本扩展公文排版助手：使用方法、常见问题、脚本制作与分享。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gw.xkonglong.com/vba.html">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('xkl-theme');
+    if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-seal" aria-hidden="true">公</span>
+      <span class="brand-text">
+        <span class="brand-name">小恐龙公文排版助手</span>
+        <span class="brand-sub">for Word &amp; WPS</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="guide.html">入门指引</a>
+        <a href="feature.html">功能介绍</a>
+        <a href="vba.html" aria-current="page">VBA 脚本</a>
+        <a href="faq.html">常见问题</a>
+        <a href="update.html">更新日志</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题" title="切换深浅主题"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></button>
+      <a class="btn-nav" href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a>
+      <button class="icon-btn burger" id="menu-toggle" type="button" aria-label="打开菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">首页</a>
+  <a href="guide.html">入门指引</a>
+  <a href="feature.html">功能介绍</a>
+  <a href="vba.html">VBA 脚本</a>
+  <a href="faq.html">常见问题</a>
+  <a href="update.html">更新日志</a>
+  <a href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a>
+</div>
+
+<main class="container">
+  <div class="doc-layout">
+    <aside class="doc-aside">
+      <div class="doc-aside-inner">
+
+      <p class="aside-label">本章目录</p>
+      <ul class="aside-nav">
+          <li><a href="#sec-1">一、VBA 脚本 能做什么？</a></li>
+          <li><a href="#sec-2">二、VBA 脚本的使用</a></li>
+          <li><a href="#sec-3">（一）使用方法：</a></li>
+          <li><a href="#sec-4">（二）注意事项：</a></li>
+          <li><a href="#sec-5">(三)常见问题:</a></li>
+          <li><a href="#sec-6">VB Project访问不被信任</a></li>
+          <li><a href="#sec-7">无法执行指定的宏</a></li>
+          <li><a href="#sec-8">所选文件非ANSI编码</a></li>
+          <li><a href="#sec-9">异常来自HRESULT:0x800A802D</a></li>
+          <li><a href="#sec-10">代码死循环Word停止响应</a></li>
+          <li><a href="#sec-11">WPS Office 运行出错</a></li>
+          <li><a href="#sec-12">三、VBA脚本制作篇</a></li>
+          <li><a href="#sec-13">（一）制作VBA文件最常用的方法</a></li>
+          <li><a href="#sec-14">（二）制作VBA需要注意的问题</a></li>
+          <li><a href="#sec-15">四、获取和分享VBA脚本</a></li>
+      </ul>
+
+      <p class="aside-label">其他文档</p>
+      <div class="aside-links">
+        <a href="index.html">← 返回首页</a>
+        <a href="https://github.com/xkonglong/gw/discussions" target="_blank" rel="noopener">VBA 脚本讨论组</a>
+        <a href="https://support.qq.com/products/57503" target="_blank" rel="noopener">问题反馈</a>
+      </div>
+
+      </div>
+    </aside>
+    <div class="doc-main">
+      <div class="doc-head">
+        <span class="eyebrow">EXTENSIBILITY</span>
+        <h1>VBA 脚本指南</h1>
+        <p>即用即走，代码可见可改，把排版交给自己定义。</p>
+      </div>
+
+      <article class="prose">
+<h2 id="sec-1">一、VBA 脚本 能做什么？</h2>
+<p>尽管公文排版助手已经提供了大量的排版功能，但是具体到每个用户，往往众口难调。若插件本身集成大量繁杂的功能，不仅会影响运行速度，还可能增加更多bug，逐渐变得臃肿，这并不符合“小而美”的思想。</p>
+<p><img src="img/screenshots.gif" alt="公文自动排版"></p>
+<ul>
+<li>实现更多功能，满足更多需求，比如《公文自动排版》、《多文件批量修改》、《图片批量调整》……</li>
+<li>即用即走，文档不保存VBA代码，不占空间，减少安全隐患；</li>
+<li>VBA代码可见，可自由修改，保存和分享。</li>
+</ul>
+<h2 id="sec-2">二、VBA 脚本的使用</h2>
+<h2 id="sec-3">（一）使用方法：</h2>
+<ul>
+<li>第一步：先保存文档。（避免错误的VBA文件造成损失）</li>
+<li>第二步：点击“脚本”按钮，在打开文件对话框里，选择一个合适的VBA脚本文件即可。</li>
+<li>第三步：部分VBA会有交互操作，按照提示进行。</li>
+</ul>
+<h2 id="sec-4">（二）注意事项：</h2>
+<p>VBA脚本文件的后缀名通常为<code>.vba</code>或者<code>.bas</code>。</p>
+<p>一般来说<code>.vba</code>是专用于本插件的文件，<code>.bas</code>则是Word Visual Basic编辑器导出的文件。</p>
+<p>它们都可以执行，但是<code>.bas</code>并不是专为插件服务，有可能存在一些bug或兼容性问题，需要代码制作者略作修改。</p>
+<p>注意：请务必保证VBA代码安全可靠，插件作者不承担VBA文件造成的任何损失！</p>
+<p>您可将VBA文件上传到 https://www.virscan.org/ 进行病毒检验。</p>
+<h2 id="sec-5">(三)常见问题:</h2>
+<h2 id="sec-6">VB Project访问不被信任</h2>
+<p>解决方法： 打开 Word 选项->信任中心->宏设置:</p>
+<p><img src="img/VBAerr1.png" alt="开启VBA功能"></p>
+<p>勾选“禁用所有宏，并发出通知”（保障安全性）</p>
+<p>勾选“信任对VBA工程对象模型的访问”，（开启本功能）</p>
+<h2 id="sec-7">无法执行指定的宏</h2>
+<p>通常情况下，是所选的.vba文件有bug，导致其无法执行。</p>
+<p>您可以联系代码作者或分享人，也可以用记事本自行查看该文件。</p>
+<h2 id="sec-8">所选文件非ANSI编码</h2>
+<p>解决方法：记事本另存时选择ANSI编码即可，其他编辑器可选为简体中文GB2312（代码页936）。</p>
+<h2 id="sec-9">异常来自HRESULT:0x800A802D</h2>
+<p>运行错误的VBA代码导致Word解释器出错，在当前文档残留有执行失败的模块文件。</p>
+<p>解决方法：	点击 清理VBA代码 按钮。或进入VB编辑器，删除所有代码，保存文档即可。</p>
+<h2 id="sec-10">代码死循环Word停止响应</h2>
+<p>先尝试按 <kbd>Ctrl+Break</kbd> 中断执行，若不正确的代码导致死循环，解决方法如下：</p>
+<p>第一步：关闭并重启Word。</p>
+<p>第二步：遇到*禁用加载项*对话框时，千万记得点“否”：</p>
+<p>第三步：用编辑器检查核实 VBA代码 是否兼容或存在Bug。</p>
+<h2 id="sec-11">WPS Office 运行出错</h2>
+<p>解决办法：</p>
+<p>第一步: 最新版WPS Office默认不再支持VBA，请在开发工具->切换到VB环境 ，或者更换其他支持VBA版本的WPS，</p>
+<p>免费切换VB环境的方法: https://www.bilibili.com/video/BV19y4y1X7DE/</p>
+<p>第二步: WPS Office 选项中 勾选“信任对于VB项目的访问”</p>
+<p><img src="img/EnableWPSvba.png" alt="image"></p>
+<p>如果以上操作后，还是提示同样信息，请确认VB环境安装正确。您可以通过录制VB宏来判断VB环境是否正常。如果不正常，请尝试修复WPS。</p>
+<h2 id="sec-12">三、VBA脚本制作篇</h2>
+<h2 id="sec-13">（一）制作VBA文件最常用的方法</h2>
+<ul>
+<li>复制或下载别人分享的VBA文件,直接运行该文件即可。</li>
+<li>使用Word宏功能来录制你的操作,然后编辑宏代码,导出为<code>.bas</code>文件。</li>
+<li>在Word内置的Visual Basic编辑器里编辑并调试代码,导出为<code>.bas</code>文件。</li>
+<li>经过调试验证后的代码文件，建议保存为<code>.vba</code>再分享。</li>
+</ul>
+<h2 id="sec-14">（二）制作VBA需要注意的问题</h2>
+<ul>
+<li>一个VBA只做一件事，制作VBA文件时,请只保留一个Sub……End Sub代码块用于执行,其他调用过程改用Function关键字。过程名称建议用中文,可前缀您的ID,具体参考我分享的演示代码文件。</li>
+<li>VBA文件请使用ANSI(简体中文GB2312)编码保存,Word VBA不支持UTF-8这类编码,会导致中文乱码。</li>
+<li>不正确的代码可能导致Word崩溃、文档丢失或损坏，请勿故意制作和传播具有破坏性的VBA文件，否则可能触犯刑法第285和286条。</li>
+<li>分享或复制VBA代码时，请尊重作者版权，注明来源，保留注释。</li>
+</ul>
+<h2 id="sec-15">四、获取和分享VBA脚本</h2>
+<ul>
+<li>点此进入 Github <a href="https://github.com/xkonglong/gw/discussions" target="_blank" rel="noopener">VBA脚本讨论组</a> ， 获取和分享 VBA 脚本</li>
+</ul>
+      </article>
+      <nav class="doc-foot">
+        <a class="prev" href="feature.html"><small>上一篇</small><strong>功能介绍</strong></a>
+        <a class="next" href="faq.html"><small>下一篇</small><strong>常见问题</strong></a>
+      </nav>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-seal" aria-hidden="true">公</span>
+          <span class="brand-text">
+            <span class="brand-name">小恐龙公文排版助手</span>
+            <span class="brand-sub">for Word &amp; WPS</span>
+          </span>
+        </a>
+        <p>依据《党政机关公文格式》(GB/T 9704—2012) 的格式要求，快速设置页面版式、文字格式，插入红头、红线、版记线与页码。</p>
+        <p>本插件完全免费开源，承诺不含任何恶意代码。</p>
+      </div>
+      <div class="footer-col">
+        <h5>文档</h5>
+        <ul>
+          <li><a href="guide.html">入门指引</a></li>
+          <li><a href="feature.html">功能介绍</a></li>
+          <li><a href="vba.html">VBA 脚本指南</a></li>
+          <li><a href="faq.html">常见问题</a></li>
+          <li><a href="update.html">更新日志</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>下载与交流</h5>
+        <ul>
+          <li><a href="#download">下载安装包</a></li>
+          <li><a href="https://github.com/xkonglong/gw" target="_blank" rel="noopener">GitHub 源码</a></li>
+          <li><a href="https://github.com/xkonglong/gw/discussions" target="_blank" rel="noopener">VBA 脚本讨论组</a></li>
+          <li><a href="https://pd.qq.com/s/exu99qgjm" target="_blank" rel="noopener">QQ 频道</a></li>
+          <li><a href="https://support.qq.com/products/57503" target="_blank" rel="noopener">问题反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2020–2026 小恐龙工作室 · 本站为开源项目文档站点</span>
+      <span>gw.xkonglong.com · 小恐龙公文排版助手 v3.8.0.0</span>
+    </div>
+  </div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script src="assets/app.js" defer></script>
+
+</body>
+</html>
