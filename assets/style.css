@@ -707,6 +707,15 @@ img { max-width: 100%; }
   color: var(--ink-mute);
 }
 .footer-bottom span { letter-spacing: .3px; }
+.footer-bottom a {
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--line-strong);
+}
+.footer-bottom a:hover {
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+  text-decoration: none;
+}
 
 /* ---------- 文档页 ---------- */
 
